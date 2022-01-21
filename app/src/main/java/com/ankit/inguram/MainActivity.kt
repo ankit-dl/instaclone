@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupView()
-        val vwrsion=LibApi().API_VERSION
+
     }
 
     private fun setupView() {
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_hot, R.id.navigation_top
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
