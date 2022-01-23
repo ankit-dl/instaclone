@@ -14,13 +14,13 @@ data class Image(
     @Json(name = "ad_url")
     val adUrl: String?,
     @Json(name = "animated")
-    val animated: Boolean,
+    val animated: Boolean?,
     @Json(name = "bandwidth")
-    val bandwidth: Long,
+    val bandwidth: Long?,
     @Json(name = "comment_count")
     val commentCount: Any?,
     @Json(name = "datetime")
-    val datetime: Int,
+    val datetime: Int?,
     @Json(name = "description")
     val description: Any?,
     @Json(name = "downs")
@@ -40,15 +40,15 @@ data class Image(
     @Json(name = "hls")
     val hls: String?,
     @Json(name = "id")
-    val id: String,
+    val id: String?,
     @Json(name = "in_gallery")
-    val inGallery: Boolean,
+    val inGallery: Boolean?,
     @Json(name = "in_most_viral")
-    val inMostViral: Boolean,
+    val inMostViral: Boolean?,
     @Json(name = "is_ad")
-    val isAd: Boolean,
+    val isAd: Boolean?,
     @Json(name = "link")
-    val link: String,
+    val link: String?,
     @Json(name = "looping")
     val looping: Boolean?,
     @Json(name = "mp4")
@@ -69,15 +69,15 @@ data class Image(
     @Json(name = "tags")
     val tags: List<Any?>,
     @Json(name = "title")
-    val title: Any?,
+    val title: String?,
     @Json(name = "type")
-    val type: String,
+    val type: String?,
     @Json(name = "ups")
     val ups: Any?,
     @Json(name = "views")
-    val views: Int,
+    val views: Int?,
     @Json(name = "vote")
     val vote: Any?,
     @Json(name = "width")
-    val width: Int
+    val width: Int?
 )

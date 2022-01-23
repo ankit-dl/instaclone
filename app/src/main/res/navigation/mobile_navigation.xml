@@ -3,23 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_hot">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.ankit.inguram.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_hot"
+        android:name="com.ankit.inguram.ui.feed.ui.feed.FeedFragment"
+        android:label="@string/title_nav_hot"
+
+        tools:layout="@layout/fragment_feed">
+
+        <argument
+            android:name="feed"
+            app:argType="string"
+            android:defaultValue="hot" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.ankit.inguram.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_top"
+        android:name="com.ankit.inguram.ui.feed.ui.feed.FeedFragment"
+        android:label="@string/title_nav_top"
+        tools:layout="@layout/fragment_feed">
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.ankit.inguram.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        <argument
+            android:name="feed"
+            app:argType="string"
+            android:defaultValue="top" />
+    </fragment>
+
+
 </navigation>
